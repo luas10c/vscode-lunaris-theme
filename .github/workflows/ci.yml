@@ -2,9 +2,9 @@ name: Node.JS CI
 
 on:
   push:
-    branches: ["main", "develop"]
+    branches: ["develop"]
   pull_request:
-    branches: ["main", "develop"]
+    branches: ["develop"]
   
 jobs:
   build:
@@ -22,6 +22,13 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
   
-      - run: npm run type:checking
-      - run: npm run lint
-      - run: npm run build
+      - name: Install Dependencies
+        run: npm ci --silent
+
+      - name: Lint
+        run: |
+          npm run type:checking --if-present
+          npm run lint --if-present
+
+      - name: Build
+        run: npm run build --if-present
