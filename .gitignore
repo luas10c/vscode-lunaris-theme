@@ -13,6 +13,11 @@ dist
 .vscode/*
 !.vscodeignore
 
+# env files
+.env*
+!.env.example
+
+
 # IOS Files
 .DS_Store
 
