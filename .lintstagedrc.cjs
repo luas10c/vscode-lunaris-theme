@@ -1,5 +1,5 @@
 module.exports = {
   "**/*.{js,ts}": [
-    "eslint . --config .eslintrc.js --ext js,ts"
+    "eslint . --config .eslintrc.cjs --ext js,ts"
   ]
 }
