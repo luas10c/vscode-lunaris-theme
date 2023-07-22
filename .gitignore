@@ -5,6 +5,9 @@ node_modules
 coverage
 *.lcov
 
+# build files and directories
+dist
+
 # vscode files and directories
 .vscode
 .vscode/*
