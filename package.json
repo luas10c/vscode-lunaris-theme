@@ -1,9 +1,9 @@
 {
   "name": "vscode-husky-theme",
   "description": "A simple theme with bright colors",
+  "version": "0.0.8",
   "displayName": "Husky Oficial",
   "icon": "assets/logo.png",
-  "version": "0.0.7",
   "keywords": [
     "theme",
     "husky"
@@ -11,6 +11,7 @@
   "publisher": "luas10c",
   "type": "module",
   "scripts": {
+    "prebuild": "rimraf dist",
     "build": "tsc --project tsconfig.build.json && tsc-alias --project tsconfig.build.json",
     "generate": "node dist/generate.js",
     "package": "vsce package --no-yarn -o dist",
@@ -37,12 +38,17 @@
     "lint-staged": "^13.2.3",
     "polished": "^4.2.2",
     "prettier": "^3.0.0",
+    "rimraf": "^5.0.1",
     "tsc-alias": "^1.8.7",
     "typescript": "^5.1.6"
   },
   "categories": [
     "Themes"
   ],
+  "engines": {
+    "node": "^16.14 || ^18.10",
+    "vscode": "^1.22.0"
+  },
   "homepage": "https://github.com/luas10c/vscode-husky-theme",
   "repository": {
     "type": "git",
