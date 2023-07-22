@@ -13,6 +13,7 @@
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "tsc --project tsconfig.build.json && tsc-alias --project tsconfig.build.json",
+    "pregenerate": "npm run build",
     "generate": "node dist/generate.js",
     "package": "vsce package --no-yarn -o dist",
     "publish": "vsce publish --no-yarn",
