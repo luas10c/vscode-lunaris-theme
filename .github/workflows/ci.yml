@@ -24,3 +24,4 @@ jobs:
   
       - run: npm run type:checking
       - run: npm run lint
+      - run: npm run build
