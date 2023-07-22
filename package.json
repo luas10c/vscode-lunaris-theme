@@ -38,8 +38,9 @@
     "typescript": "^5.1.6"
   },
   "engines": {
-    "vscode": "^1.61.0"
+    "vscode": "^1.22.0"
   },
+  "engineStrict": true,
   "categories": [
     "Themes"
   ],
