@@ -10,5 +10,7 @@ dist
 # assets
 assets
 
+!.prettierrc*
+
 # .husky
 .husky
