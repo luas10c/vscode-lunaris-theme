@@ -13,10 +13,10 @@
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "tsc --project tsconfig.build.json && tsc-alias --project tsconfig.build.json",
-    "pregenerate": "npm run build",
-    "generate": "node dist/generate.js",
+    "pregenerate": "rimraf dist/themes",
+    "generate": "node dist/main.js",
     "package": "vsce package --no-yarn -o dist",
-    "publish": "vsce publish --no-yarn",
+    "publish": "vsce publish --no-yarn -p $PERSONAL_ACCESS_TOKEN --skip-duplicate",
     "lint": "eslint . --config .eslintrc.cjs --ext js,ts",
     "type:checking": "tsc --project tsconfig.json",
     "husky:prepare": "husky install"
