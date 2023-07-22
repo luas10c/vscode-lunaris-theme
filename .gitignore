@@ -1,15 +1,39 @@
-# node_modules
+# packages
 node_modules
 
-# .vscode files
+# Coverage directory used by tools like istanbul
+coverage
+*.lcov
+
+# vscode files and directories
 .vscode
 .vscode/*
 !.vscodeignore
 
-# Mac files
+# IOS Files
 .DS_Store
 
 # log and error files
 *-error.json
 *-error.log
 *.log
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# yarn v2
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+### Node Patch ###
+# Serverless Webpack directories
+.webpack/
+
+# lock files 
+yarn.lock
