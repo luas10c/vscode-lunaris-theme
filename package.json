@@ -10,8 +10,7 @@
   ],
   "publisher": "luas10c",
   "scripts": {
-    "dev": "tsnd --ignore-watch node_modules --respawn --exit-child --transpile-only src/generate.ts",
-    "build": "tsnd --ignore-watch node_modules --exit-child --transpile-only src/generate.ts",
+    "build": "tsx src/generate.ts",
     "package": "vsce package --no-yarn -o dist",
     "publish": "vsce publish --no-yarn",
     "husky:prepare": "husky install"
@@ -37,10 +36,6 @@
     "tsx": "^3.12.7",
     "typescript": "^5.1.6"
   },
-  "engines": {
-    "vscode": "^1.22.0"
-  },
-  "engineStrict": true,
   "categories": [
     "Themes"
   ],
