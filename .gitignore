@@ -9,9 +9,9 @@ coverage
 dist
 
 # vscode files and directories
-.vscode
-.vscode/*
+.vscode/**
 !.vscodeignore
+!.vscode/launch.json
 
 # env files
 .env*
