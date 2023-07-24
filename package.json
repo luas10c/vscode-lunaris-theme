@@ -1,12 +1,12 @@
 {
-  "name": "vscode-husky-theme",
-  "description": "A simple theme with bright colors",
-  "version": "0.0.8",
-  "displayName": "Husky Oficial",
-  "icon": "assets/logo.png",
+  "name": "vscode-lunaris-theme",
+  "description": "A perfect theme for your codes",
+  "version": "0.0.1",
+  "displayName": "Lunaris",
+  "icon": "icon.png",
   "keywords": [
     "theme",
-    "husky"
+    "lunaris"
   ],
   "publisher": "luas10c",
   "type": "module",
@@ -48,13 +48,13 @@
     "node": "^16.14 || ^18.10",
     "vscode": "^1.22.0"
   },
-  "homepage": "https://github.com/luas10c/vscode-husky-theme",
+  "homepage": "https://github.com/luas10c/vscode-lunaris-theme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/luas10c/vscode-husky-theme"
+    "url": "https://github.com/luas10c/vscode-lunaris-theme"
   },
   "bugs": {
-    "url": "https://github.com/luas10c/vscode-husky-theme/issues",
+    "url": "https://github.com/luas10c/vscode-lunaris-theme/issues",
     "email": "luas10c@gmail.com"
   },
   "author": {
@@ -64,14 +64,9 @@
   "contributes": {
     "themes": [
       {
-        "label": "Husky Dark",
+        "label": "Lunaris",
         "uiTheme": "vs-dark",
-        "path": "./src/themes/dark.json"
-      },
-      {
-        "label": "Husky Dark Bordered",
-        "uiTheme": "vs-dark",
-        "path": "./src/themes/dark-bordered.json"
+        "path": "./dist/themes/dark.json"
       }
     ]
   },
