@@ -1,7 +1,6 @@
 import fs from 'node:fs/promises'
 
 import { theme } from './theme.js'
-
 interface Options {
   path: string
   bordered?: boolean
