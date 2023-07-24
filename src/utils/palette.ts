@@ -1,33 +1,45 @@
-import polished from 'polished'
+import { darken, lighten } from 'polished'
 
-export const palette = {
-  white: '#FFFFFF',
-  stale: '#1a1d24',
-  cyan: '#06b6d4',
-  orange: '#ce9239',
-  blue: '#395bce',
-  red: '#395bce',
-  green: '#395bce'
+class Palette {
+  private base: string
+  private value: string
+  private exec: boolean
+
+  constructor(value: string) {
+    this.base = value
+  }
+
+  lighten(amount = 0) {
+    this.value = lighten(amount)(this.base)
+    return this
+  }
+
+  darken(amount = 0) {
+    this.value = darken(amount)(this.base)
+    return this
+  }
+
+  hex() {
+    if (this.exec) {
+      this.value = undefined
+      this.exec = false
+    }
+
+    if (this.value) {
+      this.exec = true
+      return this.value
+    }
+
+    return this.base
+  }
 }
 
-export function colors(value: string) {
-  function lighten(amount = 0) {
-    value = polished.lighten(amount)(value)
-    return this
-  }
-
-  function darken(amount = 0) {
-    value = polished.darken(amount)(value)
-    return this
-  }
-
-  function hex() {
-    return value
-  }
-
-  return {
-    lighten,
-    darken,
-    hex
-  }
+export const palette = {
+  white: new Palette('#FFFFFF'),
+  stale: new Palette('#1a1d24'),
+  cyan: new Palette('#06b6d4'),
+  orange: new Palette('#ce9239'),
+  blue: new Palette('#395bce'),
+  red: new Palette('#395bce'),
+  green: new Palette('#39cc6c')
 }
