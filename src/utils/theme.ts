@@ -15,7 +15,7 @@ export const theme = (name: string, bordered?: boolean) => {
         ],
         settings: {
           fontStyle: 'italic',
-          foreground: '#32a1d7'
+          foreground: '#4d86c2'
         }
       },
       {
@@ -27,7 +27,7 @@ export const theme = (name: string, bordered?: boolean) => {
         ],
         settings: {
           fontStyle: 'normal',
-          foreground: '#32a1d7'
+          foreground: '#4d86c2'
         }
       },
 
@@ -51,6 +51,13 @@ export const theme = (name: string, bordered?: boolean) => {
         settings: {
           foreground: '#a873de',
           fontStyle: 'italic'
+        }
+      },
+      {
+        name: 'Integers',
+        scope: ['constant.numeric'],
+        settings: {
+          foreground: '#d56fb2'
         }
       },
 
@@ -89,12 +96,22 @@ export const theme = (name: string, bordered?: boolean) => {
           foreground: '#85e89d'
         }
       },
+
       {
+        name: 'Keywords',
         scope: 'keyword',
         settings: {
           foreground: '#70a8b5'
         }
       },
+      {
+        name: 'Keyword "new"',
+        scope: ['keyword.control.new', 'keyword.operator.new'],
+        settings: {
+          fontStyle: 'bold'
+        }
+      },
+
       {
         scope: ['storage', 'storage.type'],
         settings: {
@@ -111,16 +128,19 @@ export const theme = (name: string, bordered?: boolean) => {
           foreground: '#e1e4e8'
         }
       },
+
       {
+        name: 'Strings',
         scope: [
           'string',
           'punctuation.definition.string',
           'string punctuation.section.embedded source'
         ],
         settings: {
-          foreground: '#bfe6a3'
+          foreground: '#a8cb8f'
         }
       },
+
       {
         scope: 'support',
         settings: {
