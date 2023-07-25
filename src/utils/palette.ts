@@ -38,8 +38,8 @@ export const palette = {
   white: new Palette('#FFFFFF'),
   stale: new Palette('#1a1d24'),
   cyan: new Palette('#06b6d4'),
-  orange: new Palette('#ce9239'),
-  blue: new Palette('#395bce'),
-  red: new Palette('#395bce'),
-  green: new Palette('#39cc6c')
+  orange: new Palette('#dba247'),
+  blue: new Palette('#3973ce'),
+  red: new Palette('#d34046'),
+  green: new Palette('#39cc65')
 }
