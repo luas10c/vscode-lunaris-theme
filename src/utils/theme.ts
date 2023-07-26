@@ -98,6 +98,14 @@ export const theme = (name: string, bordered?: boolean) => {
       },
 
       {
+        name: 'Objects Key YML',
+        scope: ['entity.name.tag.yaml'],
+        settings: {
+          foreground: palette.blue.lighten(0.2).hex()
+        }
+      },
+
+      {
         name: 'Keywords',
         scope: 'keyword',
         settings: {
