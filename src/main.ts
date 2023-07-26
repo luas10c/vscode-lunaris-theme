@@ -11,11 +11,14 @@ async function bootstrap() {
 
   console.log('\n🔥 \x1b[92mFiles built successfully!\x1b[0m\n')
 
-  const themes = ['dark']
+  const themes = [
+    { key: 'classic', name: 'Classic' },
+    { key: 'elegant', name: 'Elegant' }
+  ]
   for (const theme of themes) {
-    await generate(theme, {
-      path: path.resolve(baseURL, 'themes', `${theme}.json`),
-      bordered: true
+    await generate(theme.name, {
+      path: path.resolve(baseURL, 'themes', `${theme.key}.json`),
+      bordered: theme.key === 'elegant'
     })
   }
 }

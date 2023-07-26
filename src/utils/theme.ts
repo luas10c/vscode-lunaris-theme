@@ -1,9 +1,15 @@
 import { palette } from './palette.js'
 
-export const theme = (name: string, bordered?: boolean) => {
+interface Variants {
+  bordered: boolean
+}
+
+export const theme = (name: string, variants?: Variants) => {
+  const { bordered } = variants
+
   // vscode://schemas/color-theme
   return {
-    name,
+    name: `Lunaris ${name}`,
     type: 'dark',
     semanticHighlighting: true,
     tokenColors: [
@@ -410,7 +416,9 @@ export const theme = (name: string, bordered?: boolean) => {
       'activityBar.activeFocusBorder': palette.stale.hex(),
       'activityBarBadge.foreground': '#ffffff',
       'activityBarBadge.background': palette.cyan.hex(),
-      'sideBar.background': palette.stale.lighten(0.02).hex(),
+      'sideBar.background': bordered
+        ? palette.stale.lighten(0.02).hex()
+        : palette.stale.hex(),
       'sideBar.foreground': '#cccccc',
       'sideBarSectionHeader.background': '#00000000',
       'sideBarSectionHeader.foreground': '#cccccc',

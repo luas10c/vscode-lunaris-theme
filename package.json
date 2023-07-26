@@ -64,9 +64,14 @@
   "contributes": {
     "themes": [
       {
-        "label": "Lunaris",
+        "label": "Lunaris Classic",
         "uiTheme": "vs-dark",
-        "path": "./dist/themes/dark.json"
+        "path": "./dist/themes/classic.json"
+      },
+      {
+        "label": "Lunaris Elegant",
+        "uiTheme": "vs-dark",
+        "path": "./dist/themes/elegant.json"
       }
     ]
   },
