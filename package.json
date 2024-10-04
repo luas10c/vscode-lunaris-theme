@@ -1,0 +1,65 @@
+{
+  "name": "vscode-lunaris-theme",
+  "description": "A perfect theme for your codes",
+  "version": "0.0.16",
+  "displayName": "Lunaris",
+  "icon": "icon.png",
+  "keywords": [
+    "theme",
+    "lunaris"
+  ],
+  "publisher": "luas10c",
+  "type": "module",
+  "scripts": {
+    "build": "swc src --out-dir dist --strip-leading-paths --delete-dir-on-start",
+    "generate": "node dist/main.js",
+    "package": "vsce package --no-yarn -o dist",
+    "publish": "vsce publish --no-yarn -p $PERSONAL_ACCESS_TOKEN --skip-duplicate",
+    "lint": "eslint . --config .eslintrc.cjs"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.5.0",
+    "@commitlint/config-conventional": "^19.5.0",
+    "@swc/cli": "^0.4.0",
+    "@swc/core": "^1.7.26",
+    "@types/node": "^22.7.4",
+    "@typescript-eslint/eslint-plugin": "^8.8.0",
+    "@typescript-eslint/parser": "^8.8.0",
+    "@vscode/vsce": "^3.1.1",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
+    "prettier": "^3.3.3"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "homepage": "https://github.com/luas10c/vscode-lunaris-theme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/luas10c/vscode-lunaris-theme"
+  },
+  "bugs": {
+    "url": "https://github.com/luas10c/vscode-lunaris-theme/issues",
+    "email": "luas10c@gmail.com"
+  },
+  "author": {
+    "name": "luas10c",
+    "email": "luas10c@gmail.com"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Lunaris",
+        "uiTheme": "vs-dark",
+        "path": "./dist/themes/dark.json"
+      }
+    ]
+  },
+  "engines": {
+    "vscode": "^1.22.0"
+  },
+  "license": "MIT"
+}
