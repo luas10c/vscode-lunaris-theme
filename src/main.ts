@@ -1,11 +1,10 @@
-import { fileURLToPath } from 'node:url'
-import { rm, mkdir, readFile } from 'node:fs/promises'
+import { rm, mkdir } from 'node:fs/promises'
 import path from 'node:path'
 
 import { generate } from '#/utils/generate.js'
 
 async function bootstrap() {
-  const baseURL = path.resolve(fileURLToPath(import.meta.url), '..')
+  const baseURL = import.meta.dirname
 
   await rm(path.resolve(baseURL, 'themes'), { recursive: true, force: true })
   await mkdir(path.resolve(baseURL, 'themes'))
