@@ -12,27 +12,27 @@
   "type": "module",
   "scripts": {
     "build": "tsc -p tsconfig.build.json && tsc-alias -p tsconfig.build.json",
+    "lint": "eslint .",
     "pregenerate": "npm run build",
     "generate": "node dist/main.js",
     "package": "vsce package --no-yarn -o dist",
-    "publish": "vsce publish --no-yarn -p $PERSONAL_ACCESS_TOKEN --skip-duplicate",
-    "lint": "eslint . --config eslint.config.js"
+    "publish": "vsce publish --no-yarn -p $PERSONAL_ACCESS_TOKEN --skip-duplicate"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.8.0",
-    "@commitlint/config-conventional": "^19.8.0",
-    "@eslint/js": "^9.23.0",
-    "@types/node": "^22.14.0",
-    "@vscode/vsce": "^3.3.2",
-    "eslint": "^9.23.0",
-    "eslint-plugin-prettier": "^5.2.6",
-    "globals": "^16.0.0",
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
+    "@eslint/js": "^9.34.0",
+    "@types/node": "^24.3.0",
+    "@vscode/vsce": "^3.6.0",
+    "eslint": "^9.34.0",
+    "eslint-plugin-prettier": "^5.5.4",
+    "globals": "^16.3.0",
     "husky": "^9.1.7",
-    "lint-staged": "^15.5.0",
-    "prettier": "^3.5.3",
-    "tsc-alias": "^1.8.13",
-    "typescript": "^5.8.2",
-    "typescript-eslint": "^8.29.0"
+    "lint-staged": "^16.1.6",
+    "prettier": "^3.6.2",
+    "tsc-alias": "^1.8.16",
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.41.0"
   },
   "categories": [
     "Themes"
