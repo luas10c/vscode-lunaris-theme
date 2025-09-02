@@ -8,9 +8,4 @@
 
 #### Preview Theme
 
-![](preview-2.png)
-
-| | |
-| ---- | ----  |
-&nbsp;
-| ![](preview-2.png) | ![](preview-3.png) |
+![](./preview.gif)
