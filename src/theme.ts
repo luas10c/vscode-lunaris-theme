@@ -1,6 +1,6 @@
 import { colors } from './colors.js'
 
-export function theme(name: string, bordered?: boolean) {
+export function theme(name: string) {
   return {
     name,
     type: 'dark',

@@ -24,7 +24,7 @@
     "test:wacthAll": "jest --passWithNoTests --watchAll",
     "test:coverage": "jest --passWithNoTests --coverage",
     "pregenerate": "npm run build",
-    "generate": "node dist/main.js",
+    "generate": "node dist/generate.js",
     "package": "vsce package --no-yarn -o dist",
     "publish": "vsce publish --no-yarn -p $PERSONAL_ACCESS_TOKEN --skip-duplicate"
   },
