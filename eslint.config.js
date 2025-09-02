@@ -14,15 +14,6 @@ export default defineConfig([
   globalIgnores(['node_modules', 'dist', 'coverage']),
   ts.config(js.configs.recommended, ts.configs.recommended, [
     {
-      name: 'nodejs/recommended',
-      languageOptions: {
-        globals: {
-          ...globals.es2022,
-          ...globals.node
-        }
-      }
-    },
-    {
       name: 'prettier/recommended',
       plugins: {
         prettier
