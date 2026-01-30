@@ -12,25 +12,25 @@ import jest from 'eslint-plugin-jest'
 
 export default defineConfig([
   globalIgnores(['node_modules', 'dist', 'coverage']),
-  ts.config(js.configs.recommended, ts.configs.recommended, [
-    {
-      name: 'prettier/recommended',
-      plugins: {
-        prettier
-      },
-      rules: {
-        ...prettier.configs.recommended.rules
+  js.configs.recommended,
+  ts.configs.recommended,
+  {
+    name: 'prettier/recommended',
+    plugins: {
+      prettier
+    },
+    rules: {
+      ...prettier.configs.recommended.rules
+    }
+  },
+  {
+    name: 'jest/recommended',
+    files: ['**/*.{spec|test}.ts'],
+    languageOptions: {
+      globals: {
+        ...globals.jest
       }
     },
-    {
-      name: 'jest/recommended',
-      files: ['**/*.{spec|test}.ts'],
-      languageOptions: {
-        globals: {
-          ...globals.jest
-        }
-      },
-      ...jest.configs['flat/recommended']
-    }
-  ])
+    ...jest.configs['flat/recommended']
+  }
 ])
