@@ -470,7 +470,7 @@ export function theme(name: string) {
       'errorForeground': '#f48771',
       'scrollbar.shadow': '#000000',
       'sash.hoverBorder': colors.pelorous[400],
-      'window.activeBorder': colors.pelorous[400],
+      'window.activeBorder': '#00000000',
       'window.inactiveBorder': colors.bunker[900],
       'activityBar.foreground': colors.bunker[200],
       'activityBar.background': colors.bunker[950],
