@@ -1,11 +1,41 @@
-# Lunaris Theme for VSCode
+<div align="center">
+
+<img src="./icon.png" alt="Lunaris icon" width="96" />
+
+# Lunaris
+
+Minimal VS Code theme with a clean dark palette built to keep focus on the code.
 
 [![Version](https://img.shields.io/visual-studio-marketplace/v/luas10c.vscode-lunaris-theme?color=43A047)](https://marketplace.visualstudio.com/items?itemName=luas10c.vscode-lunaris-theme)
-[![Downloads](https://img.shields.io/visual-studio-marketplace/d/luas10c.vscode-lunaris-theme?color=4e72a2)]([downloads](https://marketplace.visualstudio.com/items?itemName=luas10c.vscode-lunaris-theme))
+[![Downloads](https://img.shields.io/visual-studio-marketplace/d/luas10c.vscode-lunaris-theme?color=4e72a2)](https://marketplace.visualstudio.com/items?itemName=luas10c.vscode-lunaris-theme)
 [![Installs](https://img.shields.io/visual-studio-marketplace/i/luas10c.vscode-lunaris-theme?color=43A047)](https://marketplace.visualstudio.com/items?itemName=luas10c.vscode-lunaris-theme)
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
-[![code linter: eslint](https://img.shields.io/badge/code%20linter-eslint-orange.svg?style=flat-square)](https://github.com/eslint/eslint)
 
-#### Preview Theme
+[Install on Marketplace](https://marketplace.visualstudio.com/items?itemName=luas10c.vscode-lunaris-theme)
 
-![](./preview.gif)
+</div>
+
+## Installation
+
+<div align="center">
+
+Open `Extensions` in VS Code, search for `Lunaris`, and click `Install`.
+
+</div>
+
+## Screenshots
+
+<div align="center">
+  <img src="./screenshot-1.png" alt="Lunaris screenshot 1" width="49%" height="320" />
+  <img src="./screenshot-2.png" alt="Lunaris screenshot 2" width="49%" height="320" />
+  <br />
+  <br />
+  <img src="./screenshot-3.png" alt="Lunaris screenshot 3" width="900" />
+</div>
+
+## License
+
+<div align="center">
+
+MIT
+
+</div>
