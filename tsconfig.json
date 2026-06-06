@@ -1,19 +1,25 @@
 {
   "compilerOptions": {
     "strict": true,
+    "strictNullChecks": true,
     "skipLibCheck": true,
 
     "noImplicitAny": true,
-    "strictNullChecks": true,
+    "noImplicitReturns": true,
+
+    "rootDir": "src",
 
     "target": "es2022",
     "module": "es2022",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
 
     "esModuleInterop": true,
+
+    "types": ["node"],
 
     "paths": {
       "#/*": ["./src/*"]
     }
-  }
+  },
+  "include": ["src"]
 }
