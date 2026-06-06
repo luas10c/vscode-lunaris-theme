@@ -25,11 +25,8 @@ Open `Extensions` in VS Code, search for `Lunaris`, and click `Install`.
 ## Screenshots
 
 <div align="center">
-  <img src="./screenshot-1.png" alt="Lunaris screenshot 1" width="49%" height="320" />
-  <img src="./screenshot-2.png" alt="Lunaris screenshot 2" width="49%" height="320" />
-  <br />
-  <br />
-  <img src="./screenshot-3.png" alt="Lunaris screenshot 3" width="900" />
+  <img src="./screenshot-1.png" alt="Lunaris screenshot 1" width="49%" height="400" />
+  <img src="./screenshot-2.png" alt="Lunaris screenshot 2" width="49%" height="400" />
 </div>
 
 ## License
